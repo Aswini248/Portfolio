@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aswini | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 10%;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h3{
+font-size:24px;
+}
+
+.hero h1{
+font-size:60px;
+margin:10px 0;
+color:#38bdf8;
+}
+
+.hero p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 30px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px #38bdf8;
+}
+
+.hero img{
+width:350px;
+border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 40px rgba(56,189,248,.4);
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:35px;
+margin-bottom:50px;
+text-align:center;
+color:#38bdf8;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+height:8px;
+background:#334155;
+border-radius:20px;
+margin-top:8px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.4s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+.project h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact i{
+font-size:30px;
+margin:20px;
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+justify-content:center;
+text-align:center;
+padding-top:100px;
+}
+
+.hero img{
+margin-top:40px;
+width:250px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+padding:15px;
+}
+
+nav ul{
+display:none;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>Aswini.</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Aswini V</h1>
+
+<h3>Electrical & Computer Engineering Graduate</h3>
+
+<p>
+Passionate about Python, SQL, Machine Learning, Data Analytics and IoT.
+I enjoy solving real-world problems through technology and continuously
+learning modern software and cloud technologies.
+</p>
+
+<a href="#" class="btn">Download Resume</a>
+
+</div>
+
+<img src="https://via.placeholder.com/350" alt="Profile">
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Who am I?</h3>
+
+<br>
+
+<p>
+
+I am an Electrical and Computer Engineering graduate with practical
+experience in Machine Learning, IoT, Python, SQL and Data Analytics.
+I enjoy building innovative solutions and continuously improving my
+technical skills to solve real-world engineering problems.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Education</h3>
+
+<br>
+
+<p>
+
+🎓 B.Tech Electrical & Computer Engineering<br>
+Amrita Vishwa Vidyapeetham<br><br>
+
+CGPA : 7.29
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+
+<div class="skill">
+
+Python
+
+<div class="bar">
+<span style="width:85%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+SQL
+
+<div class="bar">
+<span style="width:80%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Power BI
+
+<div class="bar">
+<span style="width:75%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Machine Learning
+
+<div class="bar">
+<span style="width:78%"></span>
+</div>
+
+</div>
+
+<div class="skill">
+
+Excel
+
+<div class="bar">
+<span style="width:85%"></span>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Tools</h3>
+
+<br>
+
+<ul>
+
+<li>Python</li>
+<li>SQL</li>
+<li>Power BI</li>
+<li>Excel</li>
+<li>Jupyter Notebook</li>
+<li>Arduino IDE</li>
+<li>MATLAB</li>
+<li>Git</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Oil Spill Detection</h3>
+
+<p>
+
+Deep Learning project with Tkinter GUI for real-time oil spill detection.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Motor Fault Detection</h3>
+
+<p>
+
+Compared SVM, Random Forest and KNN models for induction motor fault classification.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Kidney Stone Detection</h3>
+
+<p>
+
+Medical image processing using MATLAB for segmentation and feature extraction.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Heartbeat Monitoring System</h3>
+
+<p>
+
+Embedded C project for real-time heart rate monitoring and alerts.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>
+
+Email : aswinivenkat71@gmail.com
+
+</p>
+
+<p>
+
+Phone : +91 8072956385
+
+</p>
+
+<p>
+
+LinkedIn : linkedin.com/in/aswinivenkat
+
+</p>
+
+<br>
+
+<i class="fab fa-linkedin"></i>
+
+<i class="fas fa-envelope"></i>
+
+<i class="fab fa-github"></i>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Aswini V | Portfolio
+
+</footer>
+
+</body>
+</html>
